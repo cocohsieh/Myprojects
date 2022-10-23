@@ -7,4 +7,4 @@
 ![image](https://imgur.com/KQw5ddg.png)
 
 ## 【Counter】 簡易計數器
-![image](https://imgur.com/KQw5ddg.png)
+![image](https://imgur.com/OP6wpdN.png)
