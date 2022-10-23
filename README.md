@@ -4,7 +4,7 @@
 ![image](https://i.imgur.com/zpRTxOg.png)
 
 ## 【Color Flipper】 翻轉顏色：變更背景顏色
-![image](https://imgur.com/KQw5ddg.png)
+![image](https://imgur.com/2FX64MQ.png)
 
 ## 【Counter】 簡易計數器
 ![image](https://imgur.com/OP6wpdN.png)
