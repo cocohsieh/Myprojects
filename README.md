@@ -4,4 +4,4 @@
 ![image](https://i.imgur.com/zpRTxOg.png)
 
 ## 【Color Flipper】 翻轉顏色：變更背景顏色
-![image](https://imgur.com/KQw5ddg)
+![image](https://imgur.com/KQw5ddg.png)
