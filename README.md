@@ -6,14 +6,17 @@
 
 ## 【Color Flipper】 翻轉顏色
 * 點選按鈕變更背景顏色
+* https://codepen.io/yifang-hsieh/pen/WNyedjd
 ![image](https://imgur.com/2FX64MQ.png)
 
 ## 【Counter】 簡易計數器
+* https://codepen.io/yifang-hsieh/details/bGKbaqo
 ![image](https://imgur.com/OP6wpdN.png)
 
 ## 【Character Card】 BT21 角色卡
 * 點選左/右按鈕可依序切換至不同角色
 * 點選Surprise按鈕可切換至隨機角色
+* https://codepen.io/yifang-hsieh/pen/JjZPMWg
 ![image](https://imgur.com/ZBl9aYX.png)
 
 ## 【Navbar】 RWD 導覽列
