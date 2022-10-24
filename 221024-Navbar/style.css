@@ -1,0 +1,130 @@
+:root {
+  --transition: all 0.3s linear;
+  /* all = width + height */
+  /* linear (等速) */
+  --main-color: rgb(132, 50, 21);
+  --sub-color: rgb(251, 80, 18);
+  --font-style: "Courier New", Courier, monospace;
+}
+
+nav {
+  background: rgb(242, 239, 159);
+  box-shadow: 0 5px 15px rgb(193, 189, 189);
+}
+
+.nav-header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 1rem;
+}
+
+.title {
+  color: var(--main-color);
+  font-weight: bolder;
+  font-family: var(--font-style);
+  /* height: 40px; */
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  color: var(--sub-color);
+  transform: rotate(90deg);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* 隱藏連結項目 */
+.links {
+  display: flex;
+  height: 0; /* 才可以搭配overflow: hidden去隱藏連結 */
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* 顯示連結項目 -> use js add class  */
+.show-links {
+  height: 10rem;
+}
+
+.links a {
+  padding: 0.5rem 1rem;
+  color: var(--main-color);
+  font-size: 1rem;
+  font-family: var(--font-style);
+  font-weight: 900;
+  text-transform: capitalize;
+  display: block; /*才不會擠在一起*/
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.links a:hover {
+  background: rgb(237, 197, 121);
+  color: var(--sub-color);
+  padding-right: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  padding-left: 1.5rem;
+  /*hover時，字會往右移*/
+}
+
+.social-media-icons {
+  display: none;
+}
+
+/* ============================================ */
+/* 桌機版 大於800px的話*/
+@media screen and (min-width: 800px) {
+  .navbar-container {
+    /* max-width: 1170px; */
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .links a {
+    text-decoration: none;
+  }
+  .links a:hover {
+    background: transparent;
+
+    color: var(--sub-color);
+    font-weight: 900;
+    padding-right: 0;
+    padding-left: 0;
+    transform: none;
+    padding: 0.5rem 1rem;
+  }
+  .social-media-icons {
+    display: flex;
+  }
+  .social-media-icons a {
+    margin: 10px;
+    color: var(--main-color);
+  }
+  .social-media-icons a:hover {
+    color: white;
+  }
+}

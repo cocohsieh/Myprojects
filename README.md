@@ -15,3 +15,8 @@
 * 點選左/右按鈕可依序切換至不同角色
 * 點選Surprise按鈕可切換至隨機角色
 ![image](https://imgur.com/ZBl9aYX.png)
+
+## 【Navbar】 RWD 導覽列
+* 使用toggle()進行顯示及隱藏
+* https://codepen.io/yifang-hsieh/pen/ExRYWoq
+![image](https://imgur.com/ve3sItX.png)
