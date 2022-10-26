@@ -1,5 +1,3 @@
-
-
 let questions = document.querySelectorAll(".question-box")
 
 // 因為是querySelectorAll，要用forEach loop 每個內容
