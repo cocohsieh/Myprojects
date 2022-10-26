@@ -26,5 +26,5 @@
 
 ## 【Questions】 Q & A
 * 使用toggle()進行顯示及隱藏
-* https://codepen.io/yifang-hsieh/pen/ExRYWoq
-![image](https://imgur.com/XuK2Arw.png)
+* https://codepen.io/yifang-hsieh/pen/MWXYwyZ
+![image](https://imgur.com/nbO4nxi.png)
