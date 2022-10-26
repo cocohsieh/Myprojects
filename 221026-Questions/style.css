@@ -1,0 +1,91 @@
+body {
+  background: #b5c6b8;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.position-center {
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: #48523d;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 60px 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.question-box {
+  width: 600px;
+  background: #edf2f7;
+  box-shadow: 5px 5px 10px #6e7770;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 10px 0 10px; */
+  align-items: center;
+}
+
+.question-btn {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: #48523d;
+}
+
+/* 先預設隱藏 */
+.question-text {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
+}
+
+/* show-text --> 顯示回答 & icon變減號 */
+.show-text .question-text {
+  display: block;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    width: 60%;
+  }
+  .question-box{
+    width: 90%;
+  }
+  
+
+
+}

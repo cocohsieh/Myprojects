@@ -23,3 +23,8 @@
 * 使用toggle()進行顯示及隱藏
 * https://codepen.io/yifang-hsieh/pen/ExRYWoq
 ![image](https://imgur.com/ve3sItX.png)
+
+## 【Questions】 Q & A
+* 使用toggle()進行顯示及隱藏
+* https://codepen.io/yifang-hsieh/pen/ExRYWoq
+![image](https://imgur.com/XuK2Arw.png)
