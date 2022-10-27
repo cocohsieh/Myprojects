@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <h1>Our Menu</h1>
+      </div>
+      <!-- Menu category -->
+      <div class="category">
+        <!-- 設data-屬性 可取得dataset ; data-後面的屬性名可自行命名-->
+        <button class="filter-btn" type="button" data-id="all">All</button>
+        <button class="filter-btn" type="button" data-id="breakfast">Breakfast</button>
+        <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+        <button class="filter-btn" type="button" data-id="shakes">Shakes</button>
+        <button class="filter-btn" type="button" data-id="dinner">Dinner</button>
+      </div>
+      <!-- menu -->
+      <div class="menu-container">
+        <div class="menu-box">
+          <div class="img">
+            <img class="photo" src="./menu-item.jpeg" alt="" />
+          </div>
+          <div class="menu-intro">
+            <div class="menu-info">
+              <div class="name">buttermilk pancakes</div>
+              <div class="price">$360</div>
+            </div>
+            <div class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              porro voluptas a?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

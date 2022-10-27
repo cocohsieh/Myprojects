@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="preloader">
+          <img src="preloader.gif" class="preloader-item" alt="preloader">
+        </div>
+        <video muted autoplay loop class="video-container">
+          <source src="surfing.mp4" type="video/mp4" />
+        </video>
+        <h1>Surfing</h1>
+        <button class="switch-btn">
+          <span>PLAY</span>
+          <span>PAUSE</span>
+          <span class="switch"></span>
+        </button>
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

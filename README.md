@@ -28,3 +28,11 @@
 * 使用toggle()進行顯示及隱藏
 * https://codepen.io/yifang-hsieh/pen/MWXYwyZ
 ![image](https://imgur.com/nbO4nxi.png)
+
+## 【Video】
+* 網頁加載尚未完成時，會顯示preloader
+* 切換按鈕可播放或暫停背景影片
+* https://codepen.io/yifang-hsieh/pen/LYrEJow
+![image](https://imgur.com/yqcNVsu.mp4)
+
+

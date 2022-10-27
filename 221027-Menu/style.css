@@ -1,0 +1,105 @@
+:root {
+  --color-emphasis: #ac011c;
+  --color-light: #b17e4b;
+  --color-dark: #2d0001;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-emphasis);
+  font-size: 2rem;
+  text-shadow: 3px 1px var(--color-dark);
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.category button {
+  margin-right: 10px;
+  padding: 5px 15px;
+  border: 2px solid var(--color-light);
+  border-radius: 5px;
+  box-shadow: 1px 1px;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-light);
+}
+
+.category button:hover {
+  color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:0 80px
+}
+
+.menu-box {
+  width: 45%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.menu-intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  /* justify-content: space-around; */
+}
+
+.menu-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  border-bottom: 2px solid var(--color-light);
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--color-emphasis);
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--color-emphasis);
+}
+
+img {
+  min-width: 40%;
+  height: 200px;
+  border: 5px solid var(--color-light);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* 手機版 */
+@media screen and (max-width: 768px) {
+  .menu-container {
+    justify-content: center;
+    margin:0 30px
+  }
+
+  .menu-box {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
