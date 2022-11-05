@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,180 +9,248 @@
 }
 
 :root {
-  --color-blue: rgb(13, 69, 223);
+  --transition: all 0.3s linear;
 }
 
-header {
-  min-height: 100vh;
-  background: url("https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  background-size: cover;
-  background-position: center;
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 
-nav {
+.btn-white {
+  background: black;
+  color: white;
+
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.btn:hover {
+  color: black;
   background: white;
 }
 
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  box-shadow: 2px 2px 10px grey;
+/* section */
+.section {
+  padding-bottom: 5rem;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* 桌機 */
+
+/* .section-center {
+    width: 95vw;
+} */
+
+/* =========================================== */
+main {
+  /* background: rgb(238, 149, 149); */
+  /* min-height: 100vh;
+  display: grid;
+  place-items: center; */
+}
+/*
+=============== 
+Scroll
+===============
+*/
+/* navbar */
+
+/* ==============================================手機*/
+
+nav {
+  background: white;
+  padding: 1rem 1.5rem;
+}
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 2px 2px 5px grey;
 }
 
 .nav-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  font-size: 2rem;
-  font-weight: 700;
-  /* text-shadow: 1px 1px 2px rgb(22, 22, 22); */
 }
 
-/* 漢堡選單 */
 .nav-toggle {
-  display: none;
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: blue;
+}
+
+.site-name {
+  color: black;
+  font-size: 2rem;
 }
 
 .links-container {
-  /* align-self: center; */
-  height: 0;
+  height: 0px;
   overflow: hidden;
+  transition: var(--transition);
 }
-
 .show-links {
-  height: 200px;
+  /* height: 200px; */
 }
-
-.links {
-  display: flex;
-}
-
-.links li {
+.links a {
   display: block;
-  margin: 0 10px;
-}
-
-.links li a {
+  background: white;
   color: black;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-decoration: none;
+  font-size: 1rem;
+  transition: var(--transition);
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+.links a:hover {
+  color: blue;
 }
 
-.links li a:hover {
-  color: var(--color-blue);
+/* hero */
+header {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1611404058938-ac3d6bec77ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: center;
 }
-
-
-/* ----------------------------------------- */
 .banner {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
   text-align: center;
 }
-
 .container h1 {
   color: white;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgb(22, 22, 22);
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 30px;
 }
-
 .container p {
   color: white;
-  margin-bottom: 40px;
+  font-size: 1.2rem;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
-.container a {
-  border: 2px solid white;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 10px 20px;
-  color: white;
-  font-weight: 900;
+/* ===================================================== */
+/* 桌機 */
+@media screen and (min-width: 768px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color: black;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    display: block;
+    transition: var(--transition);
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+  .links a:hover {
+    color: blue;
+  }
+  .container p {
+    max-width: 40rem;
+  }
 }
 
-.container a:hover {
-  color: var(--color-blue);
-  border: 2px solid var(--color-blue);
+/* sections and title */
+.title {
+  font-size: 1.3rem;
+  text-align: center;
 }
-
+.title span {
+  color: blue;
+}
 #about,
 #services,
 #tours {
   height: 80vh;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.title span {
-  color: var(--color-blue);
-}
-
-/* ---footer--- */
 footer {
-  height: 160px;
-  background: #000;
+  background: black;
+  padding: 5rem 1rem;
+}
+footer p {
   color: white;
+  text-align: center;
+}
+
+/* 回到最上方按鈕 */
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: blue;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 60px;
+  border-radius: 50%;
+  color: white;
+  /* 預設隱藏 -> 之後再toggle顯示*/
+  visibility: hidden; 
+  z-index: -100;
+  animation: bounce 2s ease-in-out infinite;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
 
-.top-link {
-    color: white;
-    background: var(--color-blue);
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-}
-
-
-/* ----------手機版---------- */
-@media screen and (max-width: 768px) {
-  .links-container {
-    /* display: none; */
-    height: 0;
-    overflow: hidden;
-
+/* scroll to top */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
   }
-  .nav-toggle {
-    display: block;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
+  50% {
+    transform: scale(1.2);
   }
-  .nav-toggle:hover {
-    color: var(--color-blue);
-  }
-  .nav-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .show-link {
-    visibility: visible;
-    z-index: 100;
+  100% {
+    transform: scale(1);
   }
 }
