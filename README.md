@@ -39,6 +39,6 @@
 * 滾動到指定位置
 * 回到頁面最上方按鈕
 * https://codepen.io/yifang-hsieh/pen/
-![image](https://imgur.com/cegP4vN.mp4)
+![image](https://imgur.com/cegP4vN.png)
 
 
