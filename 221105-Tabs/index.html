@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 關於 -->
+      <div class="title">
+        <h2>ABOUT</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+          mollitia quos eos quisquam. Ipsum, tempore doloribus possimus amet
+          distinctio veniam laborum ad repellat, minima sapiente unde quas
+          quibusdam animi ea.
+        </p>
+      </div>
+      <!-- 內容區塊：左邊圖，右邊文字 -->
+      <div class="about-center section-center">
+        <!-- 左邊：圖區 -->
+        <article class="about-img">
+          <img
+            src="https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="about-img"
+          />
+        </article>
+
+        <!-- 右邊：文字區 -->
+        <article class="about">
+          <!-- 按鈕區 -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">History</button>
+            <button class="tab-btn" data-id="vision">Vision</button>
+            <button class="tab-btn" data-id="goals">Goals</button>
+          </div>
+          <div class="about-content">
+            <!-- 第一區 -->
+            <div class="content active" id="history">
+              <h4>History</h4>
+              <p>
+                Our history Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt enim nostrum repellendus ad reprehenderit
+                placeat?
+              </p>
+            </div>
+            <!-- 第二區 -->
+            <div class="content" id="vision">
+              <h4>Vision</h4>
+              <p>
+                Vision Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt enim nostrum repellendus ad reprehenderit placeat?
+              </p>
+            </div>
+            <!-- 第三區 -->
+            <div class="content" id="goals">
+              <h4>Goals</h4>
+              <p>
+                We have three goals Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Nesciunt enim nostrum repellendus ad
+                reprehenderit placeat?
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
