@@ -72,6 +72,7 @@ img {
 /* 隱藏內文 */
 .content {
   display: none;
+  padding: 0 20px;
 }
 /* active時顯示內文 */
 .content.active {
@@ -92,10 +93,9 @@ img {
     width: 60%;
   }
   .about-center {
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     margin: 0 80px;
-
   }
   .about {
     /* height: 220px; */
